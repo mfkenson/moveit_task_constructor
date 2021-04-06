@@ -13,7 +13,7 @@ RobotModelPtr getModel() {
 	builder.addChain("base->link1->link2->tip", "continuous");
 	builder.addGroupChain("base", "link2", "group");
 	builder.addGroupChain("link2", "tip", "eef_group");
-	builder.addEndEffector("eef", "link2", "group", "eef_group");
+	//builder.addEndEffector("eef", "link2", "group", "eef_group"); //no idea..compile error
 	return builder.build();
 }
 
